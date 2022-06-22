@@ -1,0 +1,109 @@
+footer{
+    position: relative;
+    background-color: var(--card-color);
+    &::after{
+        content: "";
+        width: 100vw;
+        border-bottom: 1px solid var(--subtitle-color);
+        position: absolute;
+        bottom: 17.5rem;
+    }
+    &::before{
+        content: "";
+        width: 100vw;
+        border-bottom: 1px solid var(--subtitle-color);
+        position: absolute;
+        top: 24rem;
+    }
+}
+footer .container{
+    display: grid;
+    grid-template-areas: "footerTop footerTop"
+                         "newsletter footerMenu"
+                         "footerBottom footerBottom";
+    grid-template-columns: 1.2fr 2fr ;
+    
+    .top-footer{
+        @include d-flex;
+        justify-content: space-between;
+        grid-area: footerTop;
+        margin-block: 8.2rem 7.7rem;
+        h2{
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+    }
+    .newsletter{
+        grid-area: newsletter;
+        padding-block: 8rem;
+        border-right: 1px solid #5A5757;
+        p{
+            font-size: 3rem;
+            font-weight: 500;
+            color: var(--text-color);
+            width: 39rem;
+            margin-bottom: 2.5rem;
+        }
+        input{
+           background-color: var(--color-input);
+           border: none; 
+           padding: 2rem;
+           font-size: 2rem;
+           font-weight: 400;
+           color: #5A5757;
+           &:focus {
+            @include input-outline(none);
+           }
+        }
+        button{
+            background-color: var(--text-color);
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 2rem;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+    .footer-menu{
+        @include d-flex;
+        justify-content: flex-end;
+        gap: 12.8rem;
+        margin-right: 10.8rem;
+        grid-area: footerMenu;
+        margin-block: 8rem;
+        li{
+            color: var(--text-color);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        a{
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--subtitle-color);
+            padding-block: .8rem;
+            display: block;
+        }
+    }
+    
+    .bottom-footer{
+        @include d-flex;
+        grid-area: footerBottom;
+        margin-block: 7rem;
+        a{
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--subtitle-color);
+        }
+        .social{
+            @include d-flex;
+            justify-content: flex-end;
+            gap: 5rem;
+        }
+    }
+}
+
+

@@ -1,0 +1,45 @@
+div.main-three  {
+    .container{
+        margin-bottom: 15.0rem;
+    }
+    h2{
+        font-size: 5rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 15.8rem;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 37.7rem 37.7rem;
+        grid-template-rows: 37.7rem 37.7rem;
+        gap: 5rem;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        &::after{
+            position: absolute;
+            left: 50%;
+            content: "";
+            height: 85%;
+            border: 1px solid var(--subtitle-color);
+        }
+        .card{
+            max-width: 37.7rem;
+            .astronauta-arrow{
+                @include d-flex;
+                font-size: 3rem;
+                font-weight: 500;
+                color: var(--text-color);
+                margin-bottom: 3.4rem;
+            }
+            .astronauta-name{
+                @include d-flex;
+                font-size: 2rem;
+                font-weight: 600;
+                color: var(--subtitle-color);
+                margin-bottom: 2.6rem;
+            }
+        }
+    }
+    
+}

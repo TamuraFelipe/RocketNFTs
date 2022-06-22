@@ -1,0 +1,53 @@
+div.main-four {
+    .container{
+        margin-bottom: 15rem;
+        h2{
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-align: center;
+        }
+        a{
+            @include d-flex;
+            justify-content: center;
+            gap: 1.3rem;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--text-color);
+        }
+        .artists-gallery{
+            width: 100%;
+            @include d-flex;
+            gap: 11.1rem;
+            flex-wrap: wrap;
+            margin-block: 12rem 5.4rem;
+            .artist-card{
+                @include d-flex;
+                justify-content: space-evenly;
+                width: 30rem;
+                height: 15rem;
+                background-color: var(--card-color);
+                transition: background 200ms;
+                p{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: var(--text-color);
+                }
+                span{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+                &:hover{
+                    background-color: var(--color-logo);
+                }
+                &:hover span{
+                    color: var(--text-color);
+                }
+            }
+        }
+    }
+}
+
+
+
+

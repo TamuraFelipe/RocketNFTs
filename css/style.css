@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+  font-size: 62.5%;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--body-background);
+}
+
+html body .container {
+  max-width: 127.7rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+html body a {
+  text-decoration: none;
+}
+
+html body ul {
+  list-style: none;
+}
+
+html body .bg {
+  background-image: url(../assets/background.png);
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rose {
+  color: var(--color-logo);
+}
+
+header .container {
+  height: 20.5rem;
+}
+
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15.7rem;
+}
+
+header .navigation .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+}
+
+header .navigation .menu a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  padding: 1.2rem 2.2rem;
+}
+
+header .navigation .menu a:hover {
+  border-bottom: 0.1rem solid var(--text-color);
+}
+
+header .navigation .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.5rem;
+  background-color: var(--text-color);
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--black-text);
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+header .navigation .btn:hover {
+  opacity: .8;
+}
+
+main#main-one {
+  margin-bottom: 10rem;
+}
+
+main#main-one .container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+      grid-template-areas: "d h1 b";
+}
+
+main#main-one .container .description {
+  max-width: 40rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: d;
+}
+
+main#main-one .container h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: h1;
+}
+
+main#main-one .container .badge {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+}
+
+main#main-one .container .selected-artists {
+  position: relative;
+  margin-top: 5.5rem;
+}
+
+main#main-one .container .selected-artists .artists-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main#main-one .container .selected-artists .artists-perfil .qtd-artists {
+  margin-left: .5rem;
+}
+
+main#main-one .container .selected-artists .artists-perfil span {
+  font-weight: 700;
+}
+
+main#main-one .container .selected-artists .artists-perfil img {
+  z-index: 4;
+}
+
+main#main-one .container .selected-artists .artists-perfil img:nth-child(2) {
+  margin-left: -7rem;
+  z-index: 3;
+}
+
+main#main-one .container .selected-artists .artists-perfil img:nth-child(3) {
+  margin-left: -6rem;
+  z-index: 2;
+}
+
+main#main-one .container .selected-artists .artists-perfil img:nth-child(4) {
+  margin-left: -7rem;
+  z-index: 1;
+}
+
+div.gallery img {
+  max-width: 28.7rem;
+}
+
+div.gallery .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 6rem;
+  -webkit-column-gap: 2.6rem;
+          column-gap: 2.6rem;
+}
+
+div.main-two {
+  width: 100%;
+  border-bottom: 0.1rem solid var(--subtitle-color);
+  margin-bottom: 15rem;
+}
+
+div.main-two .container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "s inf" "s img";
+  padding: 0;
+}
+
+div.main-two .container .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7rem;
+  padding-block: 13.3rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: s;
+  border-right: 0.1rem solid var(--subtitle-color);
+  padding-right: 6rem;
+}
+
+div.main-two .container .stats .number {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+div.main-two .container .stats .type {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--subtitle-color);
+}
+
+div.main-two .container .more-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 12.6rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: inf;
+}
+
+div.main-two .container .more-information .information {
+  width: 40%;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+div.main-two .container .more-information .information p {
+  margin-bottom: 6.3rem;
+  text-align: justify;
+}
+
+div.main-two .container .more-information .information a {
+  text-decoration: underline;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+div.main-two .container .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+div.main-two .container .banner img {
+  grid: img;
+  height: 26.5rem;
+}
+
+div.main-three .container {
+  margin-bottom: 15.0rem;
+}
+
+div.main-three h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 15.8rem;
+}
+
+div.main-three .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 37.7rem 37.7rem;
+      grid-template-columns: 37.7rem 37.7rem;
+  -ms-grid-rows: 37.7rem 37.7rem;
+      grid-template-rows: 37.7rem 37.7rem;
+  gap: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+div.main-three .cards::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  height: 85%;
+  border: 1px solid var(--subtitle-color);
+}
+
+div.main-three .cards .card {
+  max-width: 37.7rem;
+}
+
+div.main-three .cards .card .astronauta-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 3.4rem;
+}
+
+div.main-three .cards .card .astronauta-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--subtitle-color);
+  margin-bottom: 2.6rem;
+}
+
+div.main-four .container {
+  margin-bottom: 15rem;
+}
+
+div.main-four .container h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+
+div.main-four .container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+div.main-four .container .artists-gallery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 11.1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-block: 12rem 5.4rem;
+}
+
+div.main-four .container .artists-gallery .artist-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 30rem;
+  height: 15rem;
+  background-color: var(--card-color);
+  -webkit-transition: background 200ms;
+  transition: background 200ms;
+}
+
+div.main-four .container .artists-gallery .artist-card p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+div.main-four .container .artists-gallery .artist-card span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+div.main-four .container .artists-gallery .artist-card:hover {
+  background-color: var(--color-logo);
+}
+
+div.main-four .container .artists-gallery .artist-card:hover span {
+  color: var(--text-color);
+}
+
+footer {
+  position: relative;
+  background-color: var(--card-color);
+}
+
+footer::after {
+  content: "";
+  width: 100vw;
+  border-bottom: 1px solid var(--subtitle-color);
+  position: absolute;
+  bottom: 17.5rem;
+}
+
+footer::before {
+  content: "";
+  width: 100vw;
+  border-bottom: 1px solid var(--subtitle-color);
+  position: absolute;
+  top: 24rem;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "footerTop footerTop" "newsletter footerMenu" "footerBottom footerBottom";
+  -ms-grid-columns: 1.2fr 2fr;
+      grid-template-columns: 1.2fr 2fr;
+}
+
+footer .container .top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-content: space-between;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footerTop;
+  margin-block: 8.2rem 7.7rem;
+}
+
+footer .container .top-footer h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+footer .container .newsletter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: newsletter;
+  padding-block: 8rem;
+  border-right: 1px solid #5A5757;
+}
+
+footer .container .newsletter p {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  width: 39rem;
+  margin-bottom: 2.5rem;
+}
+
+footer .container .newsletter input {
+  background-color: var(--color-input);
+  border: none;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #5A5757;
+}
+
+footer .container .newsletter input:focus {
+  outline: 1px solid white;
+}
+
+footer .container .newsletter button {
+  background-color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+footer .container .newsletter button:hover {
+  opacity: .8;
+}
+
+footer .container .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 12.8rem;
+  margin-right: 10.8rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: footerMenu;
+  margin-block: 8rem;
+}
+
+footer .container .footer-menu li {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer .container .footer-menu a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--subtitle-color);
+  padding-block: .8rem;
+  display: block;
+}
+
+footer .container .bottom-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footerBottom;
+  margin-block: 7rem;
+}
+
+footer .container .bottom-footer a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--subtitle-color);
+}
+
+footer .container .bottom-footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 5rem;
+}
+/*# sourceMappingURL=style.css.map */
