@@ -7,10 +7,10 @@
 <h2>Descrição</h2>
 <p>Desafio projeto Rocket NFTs do programa Discover da <a href="https://www.rocketseat.com.br/">Rocketseat</a>. </p>
 <ul>
-  <li><a href="https://efficient-sloth-d85.notion.site/Desafio-Pricing-Table-e0b6f59253e54d229fdde09228226b32" target="_blank">Link para o Desafio</a></li>
-  <li>Página simples</li>
+  <li><a href="https://app.rocketseat.com.br/discover/challenges/rocket-nfts" target="_blank">Link para o Desafio</a></li>
+  <!--<li>Página simples</li>-->
   <li>Conceitos de Responsividade não implementados ainda.</li>
-  <li>Conceitos básicos de SASS</li>
+  <li>Conceitos básicos de SASS: partials, mixin e um teste de if else</li>
   <li>Plugin <a href="https://scrollrevealjs.org/">ScrollReveal</a> utilizado</li>
 </ul>
 
